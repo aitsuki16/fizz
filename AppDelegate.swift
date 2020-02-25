@@ -14,14 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        for kitty in 1...100 {
-            switch ( kitty % 3 == 0, kitty % 5 == 0) {
+        for fizzbuzz in 1...100 {
+            switch ( fizzbuzz % 3 == 0, fizzbuzz % 5 == 0) {
             case (true, false):
                 print("fizz")
             case (false, true):
                 print("buzz")
             case (false,false):
-                print(kitty)
+                print(fizzbuzz)
             case (true, true):
                 print ("fizzBuzz")
             }
