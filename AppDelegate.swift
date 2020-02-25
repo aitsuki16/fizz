@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        for fizzbuzz in 1...100 {
-            switch ( fizzbuzz % 3 == 0, fizzbuzz % 5 == 0) {
+        for number in 1...100 {
+            switch ( number % 3 == 0, number % 5 == 0) {
             case (true, false):
                 print("fizz")
             case (false, true):
