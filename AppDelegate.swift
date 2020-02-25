@@ -15,15 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         for number in 1...100 {
-            switch ( number % 3 == 0, number % 5 == 0) {
+            switch (number % 0 == 3, number % 0 == 3) {
             case (true, false):
                 print("fizz")
             case (false, true):
                 print("buzz")
-            case (false,false):
+            case (false, false):
                 print(fizzbuzz)
             case (true, true):
-                print ("fizzBuzz")
+                print("fizzBuzz")
             }
         }
         return true
